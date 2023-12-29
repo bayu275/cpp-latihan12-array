@@ -59,6 +59,10 @@ int main(int argc, char const *argv[])
             }
             cout << "Apakah masih ada data yang ingin anda masukkan (y/n) ? ", cin >> dataMahasiswa;
             
+            while (dataMahasiswa != 'y' && dataMahasiswa != 'Y' && dataMahasiswa != 'n' && dataMahasiswa != 'N') {
+                cout << "Pilihan salah! Masukkan y atau n: ", cin >> dataMahasiswa;
+            }
+            
             if (dataMahasiswa == 'y' || dataMahasiswa == 'Y') {
                 isDataMahasiswa = true;
                 jumlahMahasiswa++;
